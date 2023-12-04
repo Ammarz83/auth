@@ -15,7 +15,7 @@ class RegistrationView(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(
-                data='Спасибо за регистрацию! Вам было вычлано письмо с активационным кодом.',
+                data='Спасибо за регистрацию! Вам было вычлано писмо с активационным кодом.',
                 status=status.HTTP_201_CREATED
 
             )
